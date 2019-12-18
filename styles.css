@@ -1,64 +1,176 @@
 body {
-  background-color: #7b7594;
-  text-align: center;
-}
-
-#A-Image {
-  max-width: 990px;
-  margin: 5rem;
-  max-height: 80vh;
-}
-
-.flex-center {
+  margin-top: 0;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
-}
-
-.flex-grow {
-  flex-grow: 1;
-}
-
-.hero-section {
-  height: 71vh;
-  margin: 0;
-  padding: 0;
-}
-
-.home-section {
-  background-color: #577F99;
-  max-width: 1000px;
-}
-
-.content-text {
-  font-size: 1.6rem;
-  margin: 2rem;
-  line-height: 2.5rem;
-  text-align: justify;
-}
-
-.navigation-list{
-  list-style: none;
-  font-size: 4rem;
-  padding: 0;
-  margin: 4rem;
-  color: #ffffff;
-  height: 80vh;
-}
-
-.nav-text {
-  background-color: #577F99;
-  border: 5px solid black;
-  height: 20vh;
-  display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  width: 80%;
+  font-family: sirba-web, serif;
 }
 
-.nav-text:hover {
-  background-color: #9966CC;
-  cursor: pointer;
+header h1 a{
+  
+  background: url("fa-hc-logo.png") 50% 0% no-repeat;
+  color: #ffffff;
+  display: block;
+  margin-top: .25em;
+  padding-top: 100px;
+  text-decoration: none;
+}
+header h2 {
+  margin-bottom: 3pt;
+  font-size: 2rem;
+  background-color: white;
+  color: darkblue;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 32pt;
+  margin-bottom: 12pt;
+  margin-top: 12pt;
+}
+.nav a {
+  font-size: 1.5rem;
+  border: #ffffff solid 2px;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 3pt;
+  padding: 3pt;
+  padding-left: 8pt;
+  padding-right: 8pt;
+  text-align: center;
+  width: 80%;
+  box-shadow: 0px 2px 10px rgb(24, 18, 75);
+}
+
+ a:focus {
+  background-color: blue  ;
+}
+
+ .main-title h1{
+  line-height: 1.25em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+header {
+  margin-bottom: 26pt;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 0pt;
+  padding-top: 12pt;
+  padding-left: 12pt;
+  padding-right: 12pt;
+  padding-bottom: 2pt;
+  border: 1px solid black;
+  color: #ffffff;
+  background: darkblue;
+  font-size: 19pt;
+  text-align: center;
+  box-shadow: 0px 2px 12px #888;
+  width: 100%;
+  border-radius: 10pt;
+}
+
+.card {
+  max-width: 600px;
+  border: darkblue solid 5px;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 2px 12px #888;
+  margin-right: 0;
+  margin-left: 0;
+}
+.card h1 {
+  text-align: center;
+  color: darkblue;
+  text-decoration: underline;
+  font-weight: 900;
+}
+.card p {
+  line-height: 1.5rem;
+  letter-spacing: .01rem;
+}
+
+.introduction img {
+  float: left;
+  width: 150px;
+  margin-right: 1rem;
+}
+.jaco img {
+  margin-right: 1rem;
+  width: auto;
+  height: auto;
+}
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 26pt;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-top: 12pt;
+  padding-left: 12pt;
+  padding-right: 12pt;
+  padding-bottom: 2pt;
+  border: 1px solid black;
+  color: #ffffff;
+  background: darkblue;
+  font-size: 12pt;
+  text-align: center;
+  box-shadow: 0px 2px 12px #888;
+  width: 100%;
+  border-radius: 10pt;
+}
+.next-button {
+  float: right;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  padding: 4pt;
+  padding-left: 6pt;
+  padding-right: 6pt;
+  background-color: darkblue;
+  border-radius: .5rem;
+}
+.next-button:focus {
+  background-color: white;
+  color: darkblue;
+  border: darkblue solid 5px;
+  padding: .5pt;
+  padding-left: 4pt;
+  padding-right: 4pt;
+  border-radius: .75rem;
+}
+footer section a {
+  color: orange;
+  font-size: 1.1rem;
+}
+footer section {
+  font-size: 1rem;
+  max-width: 800px;
+  margin-top: 1rem;
+}
+
+.foot-nav {
+  margin-bottom: 1rem;
+}
+
+.foot-nav a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 3pt;
+  padding-left: 6pt;
+  padding-right: 6pt;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  border: #ffffff solid 2px;
 }
