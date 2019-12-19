@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin-top: 0;
   display: flex;
@@ -5,6 +9,8 @@ body {
   justify-content: center;
   align-items: center;
   font-family: sirba-web, serif;
+  margin: 0;
+  padding: 0;
 }
 
 header h1 a{
@@ -16,7 +22,11 @@ header h1 a{
   padding-top: 100px;
   text-decoration: none;
 }
+
 header h2 {
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
   margin-bottom: 3pt;
   font-size: 2rem;
   background-color: white;
@@ -51,6 +61,9 @@ header h2 {
  a:focus {
   background-color: blue  ;
 }
+ a:hover {
+  background-color: blue  ;
+}
 
  .main-title h1{
   line-height: 1.25em;
@@ -73,24 +86,28 @@ header {
   font-size: 19pt;
   text-align: center;
   box-shadow: 0px 2px 12px #888;
-  width: 100%;
+  width: 100%; 
   border-radius: 10pt;
 }
 
 .card {
   max-width: 600px;
-  border: darkblue solid 5px;
+  border: darkblue solid 6px;
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 0px 2px 12px #888;
   margin-right: 0;
   margin-left: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
+
 .card h1 {
   text-align: center;
   color: darkblue;
   text-decoration: underline;
   font-weight: 900;
+  margin-bottom: 1rem;
 }
 .card p {
   line-height: 1.5rem;
@@ -107,6 +124,28 @@ header {
   width: auto;
   height: auto;
 }
+
+.contacts li {
+  font-size: 2rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+.contacts a {
+  text-decoration: none;
+}
+
+.contacts a:hover {
+  color: white;
+  background-color: blue;
+  
+}
+.contacts a:focus {
+  color: white;
+  background-color: blue;
+}
+
+
 footer {
   display: flex;
   flex-flow: column nowrap;
@@ -162,7 +201,13 @@ footer section {
 .foot-nav {
   margin-bottom: 1rem;
 }
-
+.copyright {
+  background-color: white;
+  color: darkblue;
+  font-weight: bold;
+  width: 100%;
+  padding: .2rem;
+}
 .foot-nav a {
   color: #ffffff;
   font-size: 1.5rem;
