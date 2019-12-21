@@ -111,6 +111,10 @@ footer section {
 }
 .foot-nav {
   margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 .foot-nav a {
   color: white;
@@ -122,6 +126,8 @@ footer section {
   margin-right: 1rem;
   border: white solid 2px;
   text-decoration: none;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 .copyright {
   background-color: white;
