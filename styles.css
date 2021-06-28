@@ -176,7 +176,7 @@ footer section {
   height: auto;
   margin-right: 1rem;
 }
-.card a {
+.next-button {
   float: right;
   font-size: 1.5rem;
   color: white;
@@ -205,4 +205,12 @@ footer section {
   font-size: 1rem;
   margin-bottom: 0rem;
   margin-top: 0rem;
+}
+
+.testimonials {
+  padding: 1rem;
+}
+.testimonials iframe {
+  padding: 1rem;
+  
 }
