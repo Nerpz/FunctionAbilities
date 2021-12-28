@@ -3,9 +3,7 @@
   padding: 0;
   margin: 0;
 }
-.section-label {
-  
-}
+
 .mt-2 {
   margin-top: 2rem
 }
@@ -45,7 +43,7 @@ header {
 }
 header h1{
   line-height: 3rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 header h1 a {
@@ -71,7 +69,7 @@ header h2 {
   color: darkblue;
   text-decoration: underline;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .logo {
   background: url("img/logo.svg") 50% 50% no-repeat;
@@ -187,11 +185,11 @@ footer section {
   color: darkblue;
   text-decoration: underline;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 .card p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 1.5rem;
   letter-spacing: .01rem;
   text-align: left;
@@ -253,11 +251,16 @@ a:focus{
   padding: 1rem;
   
 }
-
+.testimonials .card {
+  width: 100%;
+}
 @media only screen and (max-width: 550px) {
   .yt-vid {
     width: 360px;
     height: 260px;
+  }
+  .testimonials {
+    width: 100%
   }
 }
 
@@ -268,3 +271,6 @@ a:focus{
   }
 }
 
+h1 {
+  font-size: 48px;
+}
