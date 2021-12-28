@@ -3,6 +3,12 @@
   padding: 0;
   margin: 0;
 }
+.section-label {
+  
+}
+.mt-2 {
+  margin-top: 2rem
+}
 .hidden {
   display: none;
 }
@@ -11,6 +17,7 @@
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  padding: 0;
 }
 .flx-r-l {
   display: flex;
@@ -27,14 +34,14 @@ body {
   font-family: sirba-web, serif;
 }
 header {
-  margin-left: .5rem;
-  margin-right: .5rem;
-  margin-top: .5rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-top: 0rem;
   background-color: darkblue;
   padding: 0;
   padding-top: 2rem;
   box-shadow: 2px 2px 12px #888, 2px 2px 12px #888, 3px 3px 12px #888;
-  border-radius: 2rem;
+  border-radius: 0rem;
 }
 header h1{
   line-height: 3rem;
@@ -42,24 +49,33 @@ header h1{
   font-weight: bold;
 }
 header h1 a {
-  background: url("img/fa-hc-logo.png") 50% 0% no-repeat;
   color: white;
   display: block;
   margin-top: .25rem;
-  padding-top: 8rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   text-decoration: none;
   font-size: 3rem;
 }
 header h2 {
   margin-bottom: 2rem;
-  margin-right: .5rem;
-  margin-left: .5rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
   font-size: 2rem;
   background-color: white;
   padding-top: .2rem;
   padding-bottom: .2rem;
   font-style: italic;
+}
+.section-label {
+  color: darkblue;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.logo {
+  background: url("img/logo.svg") 50% 50% no-repeat;
+  height: 200px;
 }
 .nav  {
   display: flex;
@@ -82,10 +98,16 @@ header h2 {
   width: 50%;
 }
 a:focus {
-  background-color: blue;
+  background-color: white;
+  color: blue;
+  border: 3px solid blue;
+ 
 }
 a:hover {
-  background-color: blue;
+  background-color: white;
+  color: blue;
+  border: 3px solid blue;
+
 }
 footer {
   display: flex;
@@ -93,16 +115,16 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  margin-bottom: .5rem;
-  margin-left: .5rem;
-  margin-right: .5rem;
+  margin-bottom: 0rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
   padding-top: 1rem;
   padding-bottom: 0;
   color: white;
   background: darkblue;
   font-size: 1rem;
   text-align: center;
-  border-radius: 1rem;
+  border-radius: 0rem;
   box-shadow: 0px 2px 12px #888, 2px 2px 12px #888, 3px 3px 12px #888;
 }
 footer section {
@@ -129,6 +151,12 @@ footer section {
   flex-grow: 1;
   flex-shrink: 1;
 }
+.foot-nav a:hover {
+  color: blue
+}
+.foot-nav a:focus {
+  color: blue
+}
 .copyright {
   background-color: white;
   font-size: 1.25rem;
@@ -146,13 +174,13 @@ footer section {
   color: orange;
 }
 .card {
-  max-width: 600px;
+  max-width: 900px;
   border: darkblue solid 6px;
   border-radius: 1rem;
   padding: .2rem;
   box-shadow: 0px 2px 12px #888, 2px 2px 12px #888, 3px 3px 12px #888;
   margin: .5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 .card h1 {
@@ -192,21 +220,34 @@ footer section {
   margin-bottom: .5rem;
   box-shadow: 0px 2px 10px rgb(24, 18, 75);
 }
-.card .contacts li {
+.card .contact li {
   list-style: none;
   margin-bottom: 0rem;
   margin-top: .5rem;
   font-size: 1.5rem;
 }
-.card .contacts .bottom-space {
-  margin-bottom: 2rem;
+.bottom-space {
+  margin-bottom: 0.5rem;
 }
-.card .contacts a {
+a:focus{
+  border: 5px solid red  ;
+}
+.card .contact a {
   font-size: 1rem;
   margin-bottom: 0rem;
   margin-top: 0rem;
 }
 
+.contact {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  min-width: 512px;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
 
 .testimonials iframe {
   padding: 1rem;
